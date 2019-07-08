@@ -1,2 +1,21 @@
-# pdm2java
-Automatically create relevant java classes to the given data model
+This script can generate relevant JAVA source files from the given Data model
+
+How to use:
+1a. icon on the desktop
+Create shortcut of the script pdm2java.bat on your desktop
+Use drag&drop functionality to start the script with parameter (PDM file)
+
+1b. command line
+start CMD
+switch to the folder containing the script (this folder)
+start the batch file with parameter (pdm2java.bat DataModel.pdm)
+
+
+It uses directory %TEMP%\DataModel2Java for temporary files.
+Result files are automatically copied to the relevant directories (..\src\zlbpwa\javatest\model\ and ..\src\zlbpwa\javatest\view\).
+
+
+2. Switch to the Eclipse application
+3. Select "model" and "view" packages.
+4. Refresh both packages
+5. Build
